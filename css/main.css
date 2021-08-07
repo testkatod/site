@@ -10,7 +10,8 @@ body {
 }
 
 .main-slide {
-  background-image: url("../images/background.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(black), to(transparent)), url("../images/bg_catalog.jpg");
+  background: linear-gradient(to right, black, transparent), url("../images/bg_catalog.jpg");
   background-size: 1450px;
   background-repeat: no-repeat;
   background-position: center;
@@ -102,7 +103,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   place-content: flex-end;
-  margin-top: 4em;
+  margin-top: 12em;
   margin-right: -4.6em;
 }
 
@@ -401,7 +402,7 @@ body {
 
 footer {
   color: white;
-  background: #423e3e;
+  background: #242323;
 }
 
 footer .container {
@@ -417,7 +418,7 @@ footer .container h2 {
 }
 
 footer .container p {
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 
 footer .container .left-col {
@@ -427,6 +428,7 @@ footer .container .left-col {
 footer .container .mid-col a {
   text-decoration: none;
   color: white;
+  font-size: 0.8em;
 }
 
 footer .container .mid-col ul {
@@ -439,6 +441,6 @@ footer .container .mid-col li {
 }
 
 footer .container .right-col p {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=main.css.map */

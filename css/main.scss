@@ -11,10 +11,15 @@ body {
 }
 
 .main-slide {
-    background-image: url('../images/background.jpg');
+   // background-image: url('../images/bg_catalog.jpg');
+    background: linear-gradient(to right, black, transparent), url('../images/bg_catalog.jpg');
     background-size: 1450px;
     background-repeat: no-repeat;
     background-position: center;
+    //background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/bg_catalog.jpg');
+    
+    
+    
 
     .navbar .container {
         padding: 1em;
@@ -57,7 +62,7 @@ body {
             }
 
             .mobile-menu {
-                width: 20px;
+               width: 20px;
             }
         }
     }
@@ -106,7 +111,7 @@ body {
         .wrapper {
         display: flex;
         place-content: flex-end;
-        margin-top: 4em;
+        margin-top: 12em;
         margin-right: -4.6em;
         }
 
@@ -426,7 +431,8 @@ body {
 
 footer {
     color: white;
-    background:rgb(66, 62, 62);
+    
+    background: rgb(36, 35, 35);
 
     .container {
         display: flex;
@@ -438,7 +444,7 @@ footer {
         }
 
         p {
-            font-size: 1.2em;
+            font-size: 0.8em;
         }
 
         .left-col {
@@ -449,6 +455,7 @@ footer {
             a {
                 text-decoration: none;
                 color: white;
+                font-size: 0.8em;
             }
 
             ul {
@@ -465,7 +472,7 @@ footer {
 
         .right-col {
             p {
-                font-size: 1em;
+                font-size: 0.8em;
             }
         }
     }

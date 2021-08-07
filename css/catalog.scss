@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-slide {
+
+    background: linear-gradient( black, transparent), url('../images/bg_catalog.jpg');
+   // background-image: url('../images/bg_catalog.jpg');
+    background-size: 1450px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    img.bg {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.95;
+        height: 400px;
+    }
+
+    .navbar .container {
+        padding: 1em;
+
+        .nav {
+            display: flex;
+            place-content: space-between;
+
+           &:before {
+                content: '';
+                background-image: url('../images/logo.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 80px;
+                height: 80px;
+                
+           }
+
+            .primary-nav {
+                list-style-type: none;
+                place-content: space-between;
+                margin: auto 0;
+                padding: 0;
+                text-align: left;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                    display: inline;
+                    text-align: center;
+               
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        padding: 1em 1.5em;
+                        font-weight: bold;
+                  
+                    }
+                }  
+            }
+
+            .mobile-menu {
+                width: 20px;
+            }
+        }
+    }
+
+    .main-slide-background {
+        height: 30vh;
+
+        h1 {
+               font-size: 3em;
+               color: white;
+               font-weight: bold;
+              // text-transform: uppercase;
+                text-align: center;
+                margin-top: 1em;
+
+           }
+
+        .wrapper {
+           // margin-right: -5em;
+           // margin-top: 22em;
+           // display: flex;
+           // place-content: end;
+
+           
+
+           .left-col {
+
+                padding: 0 13em 0 1em;
+                background-color: rgba($color: gray, $alpha: 0.6);
+
+                p {
+                    color: white;
+                    font-size: 0.8em;
+                }
+
+                h1 {
+                    color: white;
+                    font-size: 3em;
+                    font-weight: 400;
+                }
+            }
+
+            .right-col {
+                background-color: white;
+
+                p {
+                    padding-left: 2em;
+                    padding-right: 2em;
+                    margin-top: 2em;
+                    margin-bottom: auto;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+
+section.items {
+    .container {
+        display: flex;
+        place-content: space-between;
+        width: 100%;
+    }
+
+    .item-col {
+        margin-top: 3em;
+        background: linear-gradient(rgb(90, 90, 90), transparent), url('../images/tube-aux-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25vw;
+        height: 100vh;
+        .color-line {
+            background-color:rgb(87, 170, 94);
+            height: 0.3em;
+        }
+
+        .wrapper {
+           // background: linear-gradient(transparent, white), linear-gradient(rgb(90, 90, 90) 60%, transparent), url('../images/tube-aux-img.jpg');
+           // background-repeat: no-repeat;
+           // background-position: center;
+            padding-bottom: 9em;
+            padding-left: 1em;
+            padding-top: 2em;
+            
+        
+            a {
+                color: white;
+                font-weight: 300;
+                text-decoration: none;
+                font-size: 2em;
+
+                span {
+                    font-size: 0.5em;
+                    vertical-align: super;
+                }
+            }
+        }
+
+       img {
+           
+           object-fit: cover;
+           width: 400px;
+           margin: auto;
+       }
+    }
+
+    .item-col-nvd {
+        background: linear-gradient(rgb(90, 90, 90), transparent), url('../images/BRD_0385.JPG');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .color-line {
+            background-color: rgb(200, 98, 209);
+        }
+
+        .wrapper {
+            padding-bottom: 11em;
+        }
+
+        img {
+            width: 400px;
+        }
+
+        .wrapper {
+           // background: linear-gradient(transparent, white), linear-gradient(rgb(90, 90, 90) 60%, transparent), url('../images/nvd_aux_img.jpg');
+        }
+    }
+
+    .item-col-pmt {
+        background: linear-gradient(gray, transparent), url('../images/pmt_aux-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .color-line {
+            background-color: rgb(81, 106, 250);
+        }
+
+        .wrapper {
+            padding-bottom: 7em;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        .wrapper {
+          //  background: linear-gradient(transparent, white), linear-gradient(gray, transparent), url('../images/pmt_aux-img.jpg');
+        }
+    }
+
+    .item-col-equip {
+
+        background: linear-gradient(gray, transparent), url('../images/equip_aux-img.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .color-line {
+            background-color: rgb(102, 210, 235);
+        }
+
+        .wrapper {
+            padding-bottom: 9em;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        .wrapper {
+           // background: linear-gradient(transparent, white), linear-gradient(gray, transparent), url('../images/equip_aux-img.jpg');
+        }
+    }
+    
+}
+
