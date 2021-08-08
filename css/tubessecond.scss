@@ -17,7 +17,7 @@ body {
     background: linear-gradient( black, transparent), url('../images/tube-aux-img.jpg');
     background-size: 1450px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 
 
     img.bg {
@@ -78,7 +78,6 @@ body {
 
     .main-slide-background {
         padding-top: 1em;
-        vertical-align: middle;
         height: 80vh;
         .site-map {
             
@@ -97,172 +96,90 @@ body {
             }
         }
 
-        h1 {
-            color: white;
-            font-size: 3em;
-            margin-top: 3em;
-            width: 100vh;
+        .wrapper {
+           
+            padding-top: 2em;
+
+            h1 {
+                font-size: 3em;
+                color: white;
+                margin-bottom: 0.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+                color: white;
+                font-weight: 500;
+                margin-top: 0;
+            }
+
+            p {
+                color: white;
+            }
+
+            .right-col {
+                height: 60vh;
+                width: 30vw;
+                background: linear-gradient(rgba($color: gray, $alpha: 0.1), rgba($color: gray, $alpha: 0.1)), url('../images/secondgentube.JPG');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 2em;
+                
+            }
+
+            .left-col {
+               margin: auto 0;
+            }
 
         }
     }
 }
 
-section.sub-items {
-    .container {
-       
-    }
-
+section.photocathode {
     .wrapper {
-        display: flex;
-        place-content: center;
-        margin: 1em 0;
-        padding-bottom: 3em;
-       
-       // background-color: rgba($color: gray, $alpha: 0.5);
-
-        .secondgen, .thirdgen {
-          //  background-color: rgba($color: gray, $alpha: 0.5);
-          
-            height: 80vh;
-        }
-
-        .gap {
-            width: 5em;
-        }
-
-        img {
-           // position: absolute;
-            z-index: -9;
-            width: 100%;
-        }
-
-        h2 {
-            font-size: 2em;
-            text-align: center;
-            margin-top: -2em;
-            margin-bottom: 0;
-            color: black;
-        }
-
-        a {
-            text-decoration: none;
-            width: 9em;
-            color: black;
-            display: block;
-            text-align: center;
-            margin: 0 auto;
-            
-        }
-
-        .btn {
-            text-decoration: none;
-            color: black;
-            border: 1px solid black;
-            border-radius: 5em;
-            padding: 0.5em 2em;
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
-            font-size: 1.5em;
-            margin-top: 0;
-            color: black;
-        }
-    }
-}
-
-section.general {
-    background: rgb(34, 31, 53);
-    height: 100vh;
-    padding-top: 3em;
-
-    .wrapper {
-        display: flex;
-        place-content: center;
-
-        .gap {
-            width: 4em;
-        }
-
-        p {
-            width: 15em;
-            text-align: left;
-            font-size: 1em;
-            padding: 0;
-            font-weight: 600;
-            line-height: 1.6em;
-        }
-    }
-
-    h3 {
-        color: white;
-        font-weight: 600;
-        font-size: 3em;
-        text-align: center;
-        width: 15em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-    }
-
-    p {
-        color: white;
-        font-weight: 400;
-        font-size: 1em;
-        text-align: center;
-        
-    }
-}
-
-section.dimensions {
-    .wrapper {
-        display: flex;
-        place-content: center;
-        height: 90vh;
-        margin: auto 0;
-
-        img {
-            width: 35em;
-        }
-
-        .gap {
-            width: 15em;
-        }
-
-        h3 {
-            font-size: 3em;
-        }
-
-        p {
-            font-size: 1.3em;
-        }
-
-        .left-col, .right-col {
-            margin: auto 0;
-        }
-    }
-}
-
-section.options {
-    background-color: rgb(243, 239, 239);
-    padding-top: 1em;
-    height: 90vh;
-
-    h3 {
-        font-size: 3em;
-        text-align: center;
-    }
-
-    .wrapper {
+        padding: 3em 0;
         display: flex;
 
-        .sub-option {
-            text-align: center;
-            width: 35em;
+        .left-col {
+            width: 80vw;
+
+            .color-block {
+                width: 20em;
+                height: 20em;
+                background-color: rgb(64, 65, 64);
+                position: absolute;
+                z-index: -1;
+                margin-top: -1em;
+                margin-left: 7em;
+            }
+
+            .image {
+                height: 60vh;
+                width: 30vw;
+                background: linear-gradient(rgba($color: gray, $alpha: 0.2), rgba($color: gray, $alpha: 0.2)), url('../images/secondgentube.JPG');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+            }
+        }
+
+        .right-col {
+            width: 80vw;
+
+            h3 {
+                font-size: 3em;
+            }
+
+            p {
+                font-size: 1em;
+                width: 20em;
+            }
         }
     }
 }
+
 
 footer {
     color: white;

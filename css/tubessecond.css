@@ -16,7 +16,7 @@ body {
   background: linear-gradient(black, transparent), url("../images/tube-aux-img.jpg");
   background-size: 1450px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 }
 
 .main-slide img.bg {
@@ -78,7 +78,6 @@ body {
 
 .main-slide .main-slide-background {
   padding-top: 1em;
-  vertical-align: middle;
   height: 80vh;
 }
 
@@ -99,161 +98,84 @@ body {
   font-size: 0.8em;
 }
 
-.main-slide .main-slide-background h1 {
-  color: white;
+.main-slide .main-slide-background .wrapper {
+  padding-top: 2em;
+}
+
+.main-slide .main-slide-background .wrapper h1 {
   font-size: 3em;
-  margin-top: 3em;
-  width: 100vh;
+  color: white;
+  margin-bottom: 0.5em;
 }
 
-section.sub-items .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: center;
-  margin: 1em 0;
-  padding-bottom: 3em;
-}
-
-section.sub-items .wrapper .secondgen, section.sub-items .wrapper .thirdgen {
-  height: 80vh;
-}
-
-section.sub-items .wrapper .gap {
-  width: 5em;
-}
-
-section.sub-items .wrapper img {
-  z-index: -9;
-  width: 100%;
-}
-
-section.sub-items .wrapper h2 {
+.main-slide .main-slide-background .wrapper h2 {
   font-size: 2em;
-  text-align: center;
-  margin-top: -2em;
-  margin-bottom: 0;
-  color: black;
-}
-
-section.sub-items .wrapper a {
-  text-decoration: none;
-  width: 9em;
-  color: black;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-
-section.sub-items .wrapper .btn {
-  text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  border-radius: 5em;
-  padding: 0.5em 2em;
-  text-align: center;
-}
-
-section.sub-items .wrapper p {
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 0;
-  color: black;
-}
-
-section.general {
-  background: #221f35;
-  height: 100vh;
-  padding-top: 3em;
-}
-
-section.general .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: center;
-}
-
-section.general .wrapper .gap {
-  width: 4em;
-}
-
-section.general .wrapper p {
-  width: 15em;
-  text-align: left;
-  font-size: 1em;
-  padding: 0;
-  font-weight: 600;
-  line-height: 1.6em;
-}
-
-section.general h3 {
   color: white;
-  font-weight: 600;
-  font-size: 3em;
-  text-align: center;
-  width: 15em;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: 500;
   margin-top: 0;
 }
 
-section.general p {
+.main-slide .main-slide-background .wrapper p {
   color: white;
-  font-weight: 400;
+}
+
+.main-slide .main-slide-background .wrapper .right-col {
+  height: 60vh;
+  width: 30vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.1)), to(rgba(128, 128, 128, 0.1))), url("../images/secondgentube.JPG");
+  background: linear-gradient(rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.1)), url("../images/secondgentube.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2em;
+}
+
+.main-slide .main-slide-background .wrapper .left-col {
+  margin: auto 0;
+}
+
+section.photocathode .wrapper {
+  padding: 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.photocathode .wrapper .left-col {
+  width: 80vw;
+}
+
+section.photocathode .wrapper .left-col .color-block {
+  width: 20em;
+  height: 20em;
+  background-color: #404140;
+  position: absolute;
+  z-index: -1;
+  margin-top: -1em;
+  margin-left: 7em;
+}
+
+section.photocathode .wrapper .left-col .image {
+  height: 60vh;
+  width: 30vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.2)), to(rgba(128, 128, 128, 0.2))), url("../images/secondgentube.JPG");
+  background: linear-gradient(rgba(128, 128, 128, 0.2), rgba(128, 128, 128, 0.2)), url("../images/secondgentube.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.photocathode .wrapper .right-col {
+  width: 80vw;
+}
+
+section.photocathode .wrapper .right-col h3 {
+  font-size: 3em;
+}
+
+section.photocathode .wrapper .right-col p {
   font-size: 1em;
-  text-align: center;
-}
-
-section.dimensions .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: center;
-  height: 90vh;
-  margin: auto 0;
-}
-
-section.dimensions .wrapper img {
-  width: 35em;
-}
-
-section.dimensions .wrapper .gap {
-  width: 15em;
-}
-
-section.dimensions .wrapper h3 {
-  font-size: 3em;
-}
-
-section.dimensions .wrapper p {
-  font-size: 1.3em;
-}
-
-section.dimensions .wrapper .left-col, section.dimensions .wrapper .right-col {
-  margin: auto 0;
-}
-
-section.options {
-  background-color: #f3efef;
-  padding-top: 1em;
-  height: 90vh;
-}
-
-section.options h3 {
-  font-size: 3em;
-  text-align: center;
-}
-
-section.options .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section.options .wrapper .sub-option {
-  text-align: center;
-  width: 35em;
+  width: 20em;
 }
 
 footer {
@@ -299,4 +221,4 @@ footer .container .mid-col li {
 footer .container .right-col p {
   font-size: 0.8em;
 }
-/*# sourceMappingURL=tubes.css.map */
+/*# sourceMappingURL=tubessecond.css.map */
