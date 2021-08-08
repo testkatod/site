@@ -133,6 +133,7 @@ section.items {
         display: flex;
         place-content: space-between;
         width: 100%;
+        margin-bottom: 3em;
     }
 
     .item-col {
@@ -244,5 +245,54 @@ section.items {
         }
     }
     
+}
+
+footer {
+    color: white;
+    
+    background: rgb(36, 35, 35);
+
+    .container {
+        display: flex;
+        place-content: space-between;
+        padding: 2em 0;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+
+        .left-col {
+            width: 300px;
+        }
+
+        .mid-col {
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 0.8em;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            li {
+                margin-bottom: 0.5em;
+            }
+
+            
+        }
+
+        .right-col {
+            p {
+                font-size: 0.8em;
+            }
+        }
+    }
 }
 

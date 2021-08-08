@@ -120,6 +120,7 @@ section.items .container {
   display: flex;
   place-content: space-between;
   width: 100%;
+  margin-bottom: 3em;
 }
 
 section.items .item-col {
@@ -217,5 +218,49 @@ section.items .item-col-equip .wrapper {
 
 section.items .item-col-equip img {
   width: 250px;
+}
+
+footer {
+  color: white;
+  background: #242323;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding: 2em 0;
+}
+
+footer .container h2 {
+  font-size: 2em;
+}
+
+footer .container p {
+  font-size: 0.8em;
+}
+
+footer .container .left-col {
+  width: 300px;
+}
+
+footer .container .mid-col a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+footer .container .mid-col ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer .container .mid-col li {
+  margin-bottom: 0.5em;
+}
+
+footer .container .right-col p {
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=catalog.css.map */
